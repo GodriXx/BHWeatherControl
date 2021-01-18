@@ -12,4 +12,6 @@ public enum ConnexionError: Swift.Error {
     case errorUrl
     case noData
     case noRouterType
+    case noAppID
+    case internalError
 }

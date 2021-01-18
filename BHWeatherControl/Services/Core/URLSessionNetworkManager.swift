@@ -22,6 +22,11 @@ struct URLSessionNetworkManager: NetworkManager {
     func perform(request: RouterType,
                  onSuccess: @escaping (Data) -> Void,
                  onError: @escaping (Error) -> Void) {
+        if BaseConfig.appID == nil {
+            onError(ConnexionError.noAppID)
+            return
+        }
+        
         guard let url = URL(string: request.baseURL + request.path) else {
             onError(ConnexionError.errorUrl)
             return
