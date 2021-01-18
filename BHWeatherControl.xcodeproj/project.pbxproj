@@ -10,11 +10,11 @@
 		8F69BFD525B59179001357FA /* BHWeatherControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F69BFCB25B59178001357FA /* BHWeatherControl.framework */; };
 		8F69BFDA25B59179001357FA /* BHWeatherControlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F69BFD925B59179001357FA /* BHWeatherControlTests.swift */; };
 		8F69BFDC25B59179001357FA /* BHWeatherControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F69BFCE25B59178001357FA /* BHWeatherControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8F69BFED25B5962E001357FA /* AbstractService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F69BFEC25B5962E001357FA /* AbstractService.swift */; };
 		8F69C00025B5A248001357FA /* ConnexionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F69BFFF25B5A248001357FA /* ConnexionError.swift */; };
 		8F69C00425B5A2BC001357FA /* RouterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F69C00325B5A2BC001357FA /* RouterType.swift */; };
 		8F69C00825B5A30A001357FA /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F69C00725B5A30A001357FA /* HTTPMethod.swift */; };
 		8F69C00C25B5A4BE001357FA /* URLSessionNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F69C00B25B5A4BE001357FA /* URLSessionNetworkManager.swift */; };
+		8F69C01425B5A6F1001357FA /* AbstractService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F69C01325B5A6F1001357FA /* AbstractService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,11 +34,11 @@
 		8F69BFD425B59179001357FA /* BHWeatherControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BHWeatherControlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F69BFD925B59179001357FA /* BHWeatherControlTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BHWeatherControlTests.swift; sourceTree = "<group>"; };
 		8F69BFDB25B59179001357FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8F69BFEC25B5962E001357FA /* AbstractService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractService.swift; sourceTree = SOURCE_ROOT; };
 		8F69BFFF25B5A248001357FA /* ConnexionError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnexionError.swift; sourceTree = "<group>"; };
 		8F69C00325B5A2BC001357FA /* RouterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterType.swift; sourceTree = "<group>"; };
 		8F69C00725B5A30A001357FA /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		8F69C00B25B5A4BE001357FA /* URLSessionNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionNetworkManager.swift; sourceTree = "<group>"; };
+		8F69C01325B5A6F1001357FA /* AbstractService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +136,7 @@
 			children = (
 				8F69C00325B5A2BC001357FA /* RouterType.swift */,
 				8F69C00B25B5A4BE001357FA /* URLSessionNetworkManager.swift */,
-				8F69BFEC25B5962E001357FA /* AbstractService.swift */,
+				8F69C01325B5A6F1001357FA /* AbstractService.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -251,8 +251,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F69C00825B5A30A001357FA /* HTTPMethod.swift in Sources */,
+				8F69C01425B5A6F1001357FA /* AbstractService.swift in Sources */,
 				8F69C00025B5A248001357FA /* ConnexionError.swift in Sources */,
-				8F69BFED25B5962E001357FA /* AbstractService.swift in Sources */,
 				8F69C00C25B5A4BE001357FA /* URLSessionNetworkManager.swift in Sources */,
 				8F69C00425B5A2BC001357FA /* RouterType.swift in Sources */,
 			);
