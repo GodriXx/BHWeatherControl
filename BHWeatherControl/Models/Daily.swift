@@ -26,7 +26,9 @@ struct Daily: Codable {
         case sunrise, sunset, temp, pressure, humidity, weather, uvi
     }
     
-    func getDailyWrapper() -> DailyWrapper {
-        return DailyWrapper(daily: self)
+    func getDailyWrapper(timezoneOffset: Int) -> DailyWrapper {
+        var dailyWrapper = DailyWrapper(daily: self)
+        dailyWrapper.timezoneOffset = timezoneOffset
+        return dailyWrapper
     }
 }

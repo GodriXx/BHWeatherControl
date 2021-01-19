@@ -31,12 +31,16 @@ public struct WeatherWrapper {
         }
         guard let weatherDays = weatherObject.daily else { return }
         self.days = weatherDays.map({ (daily) -> DailyWrapper in
-            return daily.getDailyWrapper()
+            return daily.getDailyWrapper(timezoneOffset: self.timezoneOffset ?? 0)
         })
     }
     
     public var image: UIImage? {
         return UIImage(named: self.icon ?? "")
+    }
+    
+    public var currentTime: String? {
+        return Date().getCurrentTime(timezoneOffset: self.timezoneOffset ?? 0)
     }
     
 }

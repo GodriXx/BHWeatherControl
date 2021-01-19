@@ -26,6 +26,7 @@ public struct DailyWrapper {
     public var description: String?
     public var icon: String?
     public var uvi: Double?
+    public var timezoneOffset: Int?
     
     init(daily: Daily) {
         self.dailyDate = daily.dailyDt
@@ -56,5 +57,20 @@ public struct DailyWrapper {
     
     public var image: UIImage? {
         return UIImage(named: self.icon ?? "")
+    }
+    
+    public var dayName: String {
+        let date = Date(dateInt: self.dailyDate ?? 0)
+        return date.dayNameFromTimezone
+    }
+    
+    public var sunriseTime: String {
+        let date = Date(dateInt: self.sunrise ?? 0)
+        return date.getCurrentTime(timezoneOffset: self.timezoneOffset ?? 0)
+    }
+    
+    public var sunsetTime: String {
+        let date = Date(dateInt: self.sunset ?? 0)
+        return date.getCurrentTime(timezoneOffset: self.timezoneOffset ?? 0)
     }
 }
