@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "BHWeatherControl"
-  spec.version      = "1.1.0"
+  spec.version      = "1.2.0"
   spec.summary      = "An API to get weather instantly according to location"
 
   # This description is used to generate tags and improve search results.
@@ -78,7 +78,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source = { :git => "https://github.com/GodriXx/BHWeatherControl.git", :tag => "1.1.0" }
+  spec.source = { :git => "https://github.com/GodriXx/BHWeatherControl.git", :tag => "1.2.0" }
   #spec.source       = { :git => "http://EXAMPLE/WeatherControl.git", :tag => "#{spec.version}" }
 
 
